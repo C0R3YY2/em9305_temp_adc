@@ -1,0 +1,67 @@
+projects/nvm_emb_datatransfer_server/CMakeFiles/nvm_emb_datatransfer_server_di05.dir/ble/source/ble.c.obj: \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\ble\source\ble.c \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\emb_configs\verified\cfg_emb_peripheral.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\ble\source\ble.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_os.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_types.h \
+  C:\ARC\MetaWare\arc\inc\stdbool.h C:\ARC\MetaWare\arc\inc\stddef.h \
+  C:\ARC\MetaWare\arc\inc\sizet.h C:\ARC\MetaWare\arc\inc\stdint.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_queue.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\include\app_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\dm_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\hci_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\hci_defs.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\util\bda.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\emb_extensions\ble-host\include\emb_hci_vs_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\emb_extensions\ble-host\include\emb_dm_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\ble\ll_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\common\cfg_mac_ble.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\ll_defs.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_assert.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_trace.h \
+  C:\ARC\MetaWare\arc\inc\stdarg.h C:\ARC\MetaWare\arc\inc\_stdarg.h \
+  C:\ARC\MetaWare\arc\inc\features.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\emb_extensions\controller\include\ble\emb_ll_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\ble\lhci_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\sources\stack\cfg\cfg_stack.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\smp_defs.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\sec_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\att_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_timer.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\att_defs.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\att_uuid.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\include\app_db.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\include\app_cfg.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\sources\af\app_main.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\att_handler.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\dm_handler.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\emb_vs\emdt\service\includes\emdt_svc.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\util\bstream.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\emb_vs\emdt\profile\server\includes\emdtp_server.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\sources\profiles\gatt\gatt_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\hci_handler.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\l2c_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\l2c_defs.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\l2c_handler.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\ble\ll_init_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\common\bb_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\controller\include\common\cfg_mac.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\platform\include\pal_bb.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\platform\include\pal_types.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\macros.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\my_app\includes\my_app_signals.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\QPC\includes\qep.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\platform\include\pal_cfg.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\platform\include\pal_sys.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\smp_api.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-host\include\smp_handler.h \
+  C:\ARC\MetaWare\arc\inc\string.h C:\ARC\MetaWare\arc\inc\_na.h \
+  C:\ARC\MetaWare\arc\inc\xlocale.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\sources\services\svc_ch.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\sources\services\svc_core.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\ble-profiles\sources\services\svc_dis.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_buf.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_heap.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_msg.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_math.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\printf\printf.h

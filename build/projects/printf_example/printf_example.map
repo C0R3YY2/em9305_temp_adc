@@ -1,0 +1,1848 @@
+MetaWare Linker (ELF/ARCompact2) T-2022.09 (build 004) (EM-Micro)
+(c) Copyright 1995-2022, Synopsys, Inc.
+
+
+Command line: C:/ARC/MetaWare/arc/bin/ldac.exe\
+		 -q -Bpc_width=24 -Bpc_width=24 -Bdefine:STACKSIZE=4096\
+		 -Bpc_width=24 -tcf=em9305 -Bpc_width=24\
+		 -Bdefine:_IVTSIZE=0 -Bdefine:STACKSIZE=4096\
+		 -Bdefine:_HEAPSIZE=0 -q -Bgrouplib -Xnocompress\
+		 -zallow_memory_overlap -e NVM_Entry -Bno_all_archive\
+		 -zpurge\
+		 -AC:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/common/9305/NVM/linker.cmd\
+		 -Bsymout=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/build/projects/printf_example/printf_example_di05.sym\
+		 -m -Coutput=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/build/projects/printf_example/printf_example_di05.map\
+		 -Bsymin_weak=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/rom/bin/v3.0/rom.sym\
+		 -Bsymin_exclude=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/common/9305/NVM/symlist_exclude.txt\
+		 CMakeFiles/printf_example_di05.dir/nvm_main.c.obj\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/Metaware/lib_Metaware.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/firmware_header/lib_header_access.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_system/lib_em_system.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/radio/lib_radio.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/aoad/lib_aoad.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_manager/lib_sleep_manager.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm/lib_nvm_fix.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/uart/lib_uart_dma.a\
+		 C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a\
+		 -LC:/ARC/MetaWare/arc/lib/buildlib/em9305\
+		 C:/ARC/MetaWare/arc/lib/buildlib/em9305/xcheckno.o\
+		 -lc++ -lct -lmw -zgnu -o printf_example_di05.elf
+
+Arguments after expansion:
+	 -q -Bpc_width=24 -Bpc_width=24 -Bdefine:STACKSIZE=4096 \
+	-Bpc_width=24 -tcf=em9305 -Bpc_width=24 -Bdefine:_IVTSIZE=0 \
+	-Bdefine:STACKSIZE=4096 -Bdefine:_HEAPSIZE=0 -q -Bgrouplib \
+	-Xnocompress -zallow_memory_overlap -e NVM_Entry \
+	-Bno_all_archive -zpurge \
+	-AC:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/common/9305/NVM/linker.cmd \
+	-Bsymout=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/build/projects/printf_example/printf_example_di05.sym \
+	-m -Coutput=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/build/projects/printf_example/printf_example_di05.map \
+	-Bsymin_weak=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/rom/bin/v3.0/rom.sym \
+	-Bsymin_exclude=C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/common/9305/NVM/symlist_exclude.txt \
+	CMakeFiles/printf_example_di05.dir/nvm_main.c.obj \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj) \
+	C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj) \
+	-LC:/ARC/MetaWare/arc/lib/buildlib/em9305 \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/xcheckno.o \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(l64x32divnorm.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ldivnorm.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dcmpIEEE.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dcmpo.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dflt.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dmul.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dadd.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dtrunc.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ddiv.o) \
+	C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ac_mc_va.o) \
+	-zgnu -o printf_example_di05.elf 
+
+Command file "C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/common/9305/NVM/linker.cmd":
+    ################################################################################
+    ###
+    ### @file       common/9305/NVM/linker.cmd
+    ###
+    ### @project    T9305
+    ###
+    ### @brief      Linker script for the NVM.
+    ###
+    ### @classification  Internal Use
+    ###
+    ################################################################################
+    ###
+    ################################################################################
+    ###
+    ### @copyright Copyright (c) 2022, EM Microelectronic
+    ### @cond
+    ###
+    ### All rights reserved.
+    ###
+    ### Redistribution and use in source and binary forms, with or without
+    ### modification, are permitted provided that the following conditions are met:
+    ### 1. Redistributions of source code must retain the above copyright notice,
+    ### this list of conditions and the following disclaimer.
+    ### 2. Redistributions in binary form must reproduce the above copyright notice,
+    ### this list of conditions and the following disclaimer in the documentation
+    ### and/or other materials provided with the distribution.
+    ###
+    ################################################################################
+    ###
+    ### THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    ### AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    ### IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ### ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+    ### LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+    ### CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    ### SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    ### INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+    ### CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ### ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+    ### POSSIBILITY OF SUCH DAMAGE.
+    ### @endcond
+    ################################################################################
+
+    INITDATA !data, !bss, ~.rom_nvm_const, ~.nvm_const, ~.nvm_info_const, ~.rodata
+
+
+    #
+    # Get memory usage of the ROM.
+    #
+
+    # For ROM v1 (MEMORY_ROM_* not defined): PRAM=Hardcoded / NPRAM=Discarded
+    _MEMORY_ROM_PRAM_USED_END    = DEFINED(MEMORY_ROM_PRAM_USED_END)    ? MEMORY_ROM_PRAM_USED_END    : 0x0080_1138;
+    _MEMORY_ROM_NPRAM_USED_START = DEFINED(MEMORY_ROM_NPRAM_USED_START) ? MEMORY_ROM_NPRAM_USED_START : 0x0081_0000;
+
+    # Compute used size of PRAM and NPRAM by the ROM.
+    ROM_USED_PRAM_SIZE  = _MEMORY_ROM_PRAM_USED_END - 0x0080_1000;
+    ROM_USED_NPRAM_SIZE = 0x0081_0000 - _MEMORY_ROM_NPRAM_USED_START;
+
+
+    #
+    # Compute require NPRAM for static variable allocation.
+    #
+
+    # Round up the size of the NPRAM sections to be a multiple of 4 bytes.
+    MEMORY_NOINIT_SIZE          = ((SIZEOF(.noinit)         + 3) >> 2) << 2;
+    MEMORY_CONFIG_SIZE          = ((SIZEOF(.config)         + 3) >> 2) << 2;
+    MEMORY_NONPERSISTENT_SIZE   = ((SIZEOF(.non_persistent) + 3) >> 2) << 2;
+    # Compute the start of used NPRAM.
+    MEMORY_NPRAM_USED_START     = _MEMORY_ROM_NPRAM_USED_START  -
+                                  MEMORY_NOINIT_SIZE            -
+                                  MEMORY_CONFIG_SIZE            -
+                                  MEMORY_NONPERSISTENT_SIZE;
+    MEMORY_NVM_NPRAM_USED_START = MEMORY_NPRAM_USED_START;
+
+
+    #
+    # Defines for the stack.
+    #
+
+    # Place the stack just before the start of used NPRAM.
+    _STACKSIZE = DEFINED(STACKSIZE) ? STACKSIZE : 1024;
+    _fstack = MEMORY_NPRAM_USED_START - _STACKSIZE;
+    _estack = MEMORY_NPRAM_USED_START;
+
+
+    #
+    # Memory regions.
+    #
+
+    MEMORY {
+        IRAM    (rwx) : ORIGIN = 0x0018_0000, LENGTH = 32K     # DRAM6 + DRAM5 remmaped into ICCM
+        IRAM1   (rwx) : ORIGIN = 0x0018_0000, LENGTH = 16K     # Same physical memory as DRAM6 (remapped into ICCM)
+        IRAM2   (rwx) : ORIGIN = 0x0018_4000, LENGTH = 16K     # Same physical memory as DRAM5 (remapped into ICCM)
+        IRAM0   (rwx) : ORIGIN = 0x001F_F000, LENGTH = 4K      # JLI table
+
+        NVM      (rx) : ORIGIN = 0x0030_0000, LENGTH = 512K    # NVM main area
+        NVMINFO  (rx) : ORIGIN = 0x0040_0000, LENGTH = 32K     # NVM info area
+
+        DRAM0    (rw) : ORIGIN = 0x0080_0000, LENGTH = 4K
+        DRAM1    (rw) : ORIGIN = 0x0080_1000, LENGTH = 4K
+        DRAM2    (rw) : ORIGIN = 0x0080_2000, LENGTH = 4K
+        DRAM3    (rw) : ORIGIN = 0x0080_3000, LENGTH = 4K
+        DRAM4    (rw) : ORIGIN = 0x0080_4000, LENGTH = 16K
+        DRAM5    (rw) : ORIGIN = 0x0080_8000, LENGTH = 16K
+        DRAM6    (rw) : ORIGIN = 0x0080_C000, LENGTH = 16K
+
+        PRAM     (rw) : ORIGIN = 0x0080_1000, LENGTH = _fstack - 0x0080_1000
+        POOL     (rw) : ORIGIN = 0x0080_1000, LENGTH = 60K
+        NPRAM    (rw) : ORIGIN = _fstack,     LENGTH = 0x0081_0000 - _fstack
+    }
+
+    #
+    # Defines for the memory regions.
+    #
+
+    MEMORY_IRAM1_START    = ADDR(IRAM1);
+    MEMORY_IRAM1_END      = ADDR(IRAM1) + SIZEOF(IRAM1);
+
+    MEMORY_IRAM2_START    = ADDR(IRAM2);
+    MEMORY_IRAM2_END      = ADDR(IRAM2) + SIZEOF(IRAM2);
+
+    MEMORY_IRAM0_START    = ADDR(IRAM0);
+    MEMORY_IRAM0_END      = ADDR(IRAM0) + SIZEOF(IRAM0);
+
+    MEMORY_NVM_START      = ADDR(NVM);
+    MEMORY_NVM_END        = ADDR(NVM) + SIZEOF(NVM);
+
+    MEMORY_NVMINFO_START  = ADDR(NVMINFO);
+    MEMORY_NVMINFO_END    = ADDR(NVMINFO) + SIZEOF(NVMINFO);
+
+    MEMORY_DRAM0_START    = ADDR(DRAM0);
+    MEMORY_DRAM0_END      = ADDR(DRAM0) + SIZEOF(DRAM0);
+
+    MEMORY_DRAM1_START    = ADDR(DRAM1);
+    MEMORY_DRAM1_END      = ADDR(DRAM1) + SIZEOF(DRAM1);
+
+    MEMORY_DRAM2_START    = ADDR(DRAM2);
+    MEMORY_DRAM2_END      = ADDR(DRAM2) + SIZEOF(DRAM2);
+
+    MEMORY_DRAM3_START    = ADDR(DRAM3);
+    MEMORY_DRAM3_END      = ADDR(DRAM3) + SIZEOF(DRAM3);
+
+    MEMORY_DRAM4_START    = ADDR(DRAM4);
+    MEMORY_DRAM4_END      = ADDR(DRAM4) + SIZEOF(DRAM4);
+
+    MEMORY_DRAM5_START    = ADDR(DRAM5);
+    MEMORY_DRAM5_END      = ADDR(DRAM5) + SIZEOF(DRAM5);
+
+    MEMORY_DRAM6_START    = ADDR(DRAM6);
+    MEMORY_DRAM6_END      = ADDR(DRAM6) + SIZEOF(DRAM6);
+
+    MEMORY_PRAM_START     = ADDR(PRAM);
+    MEMORY_PRAM_END       = ADDR(PRAM) + SIZEOF(PRAM);
+
+    MEMORY_NPRAM_START    = ADDR(NPRAM);
+    MEMORY_NPRAM_END      = ADDR(NPRAM) + SIZEOF(NPRAM);
+
+    MEMORY_POOL_START     = ADDR(POOL);
+    MEMORY_POOL_END       = ADDR(POOL) + SIZEOF(POOL);
+
+
+    #
+    # Linker sections.
+    #
+
+    # define base addresses
+    NVMBL_ENTRY_ADDR = MEMORY_NVM_START;
+    NVM_ORIGIN = 0x0030_2000;
+    BL_ENTRY_ADDR = 0x0036_0000;
+    # overwite for special sections
+    NVM_ORIGIN = DEFINED(APP_IS_BOOTLOADER) ? BL_ENTRY_ADDR : NVM_ORIGIN;
+    NVM_ORIGIN = DEFINED(NVM_CUSTOM_ORIGIN) ? NVM_CUSTOM_ORIGIN : NVM_ORIGIN;
+
+    SECTIONS {
+        # Persistent memory of the ROM.
+        GROUP: {
+            .rom_used_pram NOLOAD SIZE(ROM_USED_PRAM_SIZE): {}
+        } > PRAM
+
+        # Persistent, non-initialized memory.
+        GROUP: {
+            .persistent? NOLOAD: {
+                *(.persistent*)
+            }
+        } > PRAM
+
+        # Persistent memory.
+        GROUP: {
+            # TLS, thread local storage
+            .tls: {
+                *(.tls*)
+            }
+            .data: {
+                *(.data*)
+            }
+            .sdata?: {
+                *(.sdata*)
+            }
+            .sbss?: {
+                *(.sbss*)
+            }
+            .bss?: {
+                *(.bss*)
+            }
+            .heap? ALIGN(4) SIZE(DEFINED _HEAPSIZE ? _HEAPSIZE : 0): {
+                *(.heap*)
+            }
+
+            # End of used PRAM. Used for setting DRAM into retention mode.
+            MEMORY_PRAM_USED_END = .;
+            MEMORY_NVM_PRAM_USED_END = .;
+        } > PRAM
+
+        # Force the linker to ensure there is enough space for the stack.
+        GROUP: {
+            .stack_allocated_space NOLOAD ADDR(_fstack) ALIGN(4) SIZE(_STACKSIZE): {}
+        } > NPRAM
+
+        # Non-persistent, non-initialized memory (lost during sleep).
+        GROUP: {
+            .noinit? NOLOAD: {
+                # Variables defined with NO_INIT.
+                *(.noinit*)
+            }
+        } > NPRAM
+
+        # Non-persistent memory (lost during sleep).
+        GROUP: {
+            .config: {
+                *(.master_config*)
+                *(.config*)
+            }
+            .non_persistent?: {
+                *(.non_persistent*)
+            }
+        } > NPRAM
+
+        # Non-persistent memory of the ROM.
+        GROUP: {
+            .rom_used_npram NOLOAD ADDR(_MEMORY_ROM_NPRAM_USED_START) SIZE(ROM_USED_NPRAM_SIZE): {}
+        } > NPRAM
+
+        # NVMINFO: Non-volatile storage for data and configuration.
+        # Do not move this group after the nvm group else .nvm* would
+        # include .nvm_info sections.
+        # The unused memory space is filled by 0xFFFF.
+        GROUP: {
+            .nvm_info_const TYPE(data): {
+                *(.nvm_info_const*)
+            }
+
+            .nvm_info TYPE(text): {
+                *(.nvm_info*)
+            }
+        } > NVMINFO
+
+        # NVMENTRY: Entry section for application startup in NVM
+        # Do not move this group after the nvm group else .nvm* would
+        # include .nvm_mbr sections.
+        # The unused memory space is filled by 0xFFFF.
+
+        GROUP ADDR(NVMBL_ENTRY_ADDR): {
+            .nvm_bootloader TYPE(text): {
+                KEEP(*(.nvm_bootloader*))
+            }
+        } > NVM
+
+        GROUP ADDR(NVM_ORIGIN): {
+            .programHeader TYPE(text): {
+                KEEP(*(.programHeader*))
+            }
+            PAYLOAD_START = .;
+            .nvm_entry TYPE(text): {
+                *(.nvm_entry*)
+            }
+        } > NVM
+
+        # NVM: Non-volatile storage for application, data and configuration.
+        # Do not move this group before the nvm info group else .nvm* would
+        # include .nvm_info sections.
+        # The unused memory space is filled by 0xFFFF.
+        # NVM: Main Flash firmware
+        GROUP NEXT(0x400): {
+            # Interrupt vector table.
+            MEMORY_IVT_START = .;
+            .vectors TYPE(text): {
+                *(.vectors*)
+            }
+            MEMORY_IVT_END = .;
+
+            # Main firmware.
+            *(TEXT): {}
+
+            # ROM/NVM constants is going to NVM
+            .rom_nvm_const?: {
+                *(.rom_nvm_const*)
+            }
+
+            # NVM constants (constants not copied into RAM).
+            .nvm_const?: {
+                *(.nvm_const*)
+            }
+
+            .const?: {
+                *(.const*)
+                *(.rom_const*)
+                *(.irom_const*)
+            }
+
+            .rodata?: {
+                *(.rodata*)
+            }
+
+            # JLI table and section initialization data structure (initdat).
+            .initdat?: {
+                *(.initdat*)
+            }
+            *(LIT): {} # .rodata
+
+            .ctors?: {
+                *(.ctors*)
+                *(.dtors*)
+                *(.eh_frame*)
+            }
+            PAYLOAD_END = .;
+            PAYLOAD_SIZE = PAYLOAD_END - PAYLOAD_START;
+        } > NVM = 0xFFFFFFFF
+        GROUP NEXT(0x2000): {
+            APP_ENTRY_ADDR = .;
+            .empty_app_entry (TEXT) SIZE(DEFINED(APP_IS_EMCORE) ? 4 : 0): {
+            } = FILL(0xFFFFFFFF, 4)
+        } > NVM
+    }
+
+OUTPUT MODULE NAME:	printf_example_di05.elf
+OUTPUT MODULE FORMAT:	Absolute Executable
+_____________________________
+
+
+SIZE SUMMARY
+------------
+
+   Writable/Executable data          = 18270 (17.84KB)
+   Read only data (lit)              =     0 ( 0.00KB)
+   Writable/Non-executable data      =     0 ( 0.00KB)
+   BSS(zero fill)                    =  6072 ( 5.93KB)
+   Unallocated (e.g., Debug)         = 313774 (306.42KB)
+
+   Total read only portion (code + lit)   =     0 ( 0.00KB)
+   Total read/write portion (data + bss)  = 24342 (23.77KB)
+   Total non-BSS size (code+lit+data)     = 18270 (17.84KB)
+
+SECTION SUMMARY
+_______________
+
+OUTPUT/  TYPE   START     END
+ INPUT SECTION  ADDRESS   ADDRESS   LENGTH
+
+.nvm_bootloader
+         text   00300000  002fffff  00000000
+.programHeader
+         xdata  00302000  00302027  00000028
+.nvm_entry
+         text   00302028  00302031  0000000a
+.vectors xdata  00302400  00302507  00000108
+.text    text   00302508  00306757  00004250
+.rom_nvm_const
+         data   00306758  00306789  00000032
+.rodata  data   00306790  0030682f  000000a0
+.initdat lit    00306830  00306b2b  000002fc
+.ctors   bss    00306b2c  00306b2b  00000000
+.empty_app_entry
+         text   00308000  00307fff  00000000
+.nvm_info
+         text   00400000  003fffff  00000000
+.nvm_info_const
+         bss    00400000  003fffff  00000000
+.rom_used_pram
+         bss    00801000  00801103  00000104
+.persistent
+         bss    00801104  008012ab  000001a8
+.tls     bss    008012ac  008012ab  00000000
+.data    bss    008012ac  008012bf  00000014
+.bss     bss    008012c0  0080131b  0000005c
+.heap    bss    0080131c  0080131b  00000000
+.stack_allocated_space
+         bss    0080eb64  0080fb63  00001000
+.config  bss    0080fb64  0080fe0f  000002ac
+.non_persistent
+         bss    0080fe10  0080fe1f  00000010
+.rom_used_npram
+         bss    0080fe20  0080ffff  000001e0
+
+
+SECTION DETAILS
+_______________
+
+OUTPUT/  TYPE   START     END
+ INPUT SECTION  ADDRESS   ADDRESS   LENGTH   MODULE NAME
+
+.nvm_bootloader
+         text   00300000  002fffff  00000000
+
+
+.programHeader
+         xdata  00302000  00302027  00000028
+
+    .programHeader.programHeader
+                00302000  00302027  00000028  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+                00302000   programHeader
+
+.nvm_entry
+         text   00302028  00302031  0000000a
+
+    .nvm_entry  00302028  00302031  0000000a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+                00302028   NVM_Entry
+
+.vectors xdata  00302400  00302507  00000108
+
+    .vectors.gNvmVectors
+                00302400  00302507  00000108  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+                00302400   gNvmVectors
+
+.text    text   00302508  00306757  00004250
+
+    .text       00302508  00302627  00000120  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(l64x32divnorm.o)
+                003025a8   _uldivmod_normbs_opt
+                003025c0   _ldivmod_normbs_opt
+    .text       00302628  0030277d  00000156  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ldivnorm.o)
+                00302628   _uldivmod_normbs
+                00302630   _ldivmod_normbs
+    <padding>   0030277e  0030277f  00000002
+    .text       00302780  00302841  000000c2  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dcmpIEEE.o)
+                00302780   __deqIEEE
+                003027c8   __dcmprIEEE
+                003027d4   __dcmpIEEE
+    <padding>   00302842  00302843  00000002
+    .text       00302844  0030286d  0000002a  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dcmpo.o)
+                00302844   __dcmpo
+    <padding>   0030286e  0030286f  00000002
+    .text       00302870  003028b7  00000048  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dflt.o)
+                00302870   _mwdflt_
+                00302884   _mwdfltu_
+    .text       003028b8  00302d0f  00000458  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dmul.o)
+                003028b8   _mwdmul_
+    .text       00302d10  003033c7  000006b8  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dadd.o)
+                00302d10   _mwdrsub_
+                00302d1c   _mwdsub_
+                00302d24   _mwdadd_
+    .text       003033c8  0030344b  00000084  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dtrunc.o)
+                003033c8   _mwdtruncu_
+                003033d8   _mwdtrunc_
+    .text       0030344c  0030398b  00000540  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ddiv.o)
+                0030344c   _mwdrdiv_
+                00303458   _mwddiv_
+    .text       0030398c  003039ab  00000020  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ac_mc_va.o)
+                0030398c   __ac_mc_va
+    .text.BOOT_BootUp
+                003039ac  00303aa5  000000fa  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                003039ac   BOOT_BootUp
+    <padding>   00303aa6  00303aa7  00000002
+    .text.BOOT_BootUpFromPor
+                00303aa8  00303af1  0000004a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303aa8   BOOT_BootUpFromPor
+    <padding>   00303af2  00303af3  00000002
+    .text.BOOT_BootUpFromSleep
+                00303af4  00303be3  000000f0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303af4   BOOT_BootUpFromSleep
+    .text.BOOT_ConfigAllModules
+                00303be4  00303c01  0000001e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    <padding>   00303c02  00303c03  00000002
+    .text.BOOT_IRQHandlerPMLHFColdStart
+                00303c04  00303c43  00000040  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303c04   BOOT_IRQHandlerPMLHFColdStart
+    .text.BOOT_IRQHandlerProtoTimerSync
+                00303c44  00303c45  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303c44   BOOT_IRQHandlerProtoTimerSync
+    <padding>   00303c46  00303c47  00000002
+    .text.BOOT_IrqActionRoutine
+                00303c48  00303ca7  00000060  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303c48   BOOT_IrqActionRoutine
+    .text.BOOT_PumpTo1_9V_VMULT
+                00303ca8  00303cf7  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .text.BOOT_RegisterWakeUpAction
+                00303cf8  00303d13  0000001c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00303cf8   BOOT_RegisterWakeUpAction
+    .text.IRQHandler_ArcTimer0
+                00303d14  00303dd5  000000c2  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00303d14   IRQHandler_ArcTimer0
+    <padding>   00303dd6  00303dd7  00000002
+    .text.IRQHandler_ArcTimer1
+                00303dd8  00303e99  000000c2  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00303dd8   IRQHandler_ArcTimer1
+    <padding>   00303e9a  00303e9b  00000002
+    .text.IRQHandler_GPIO
+                00303e9c  00303f7b  000000e0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00303e9c   IRQHandler_GPIO
+    .text.IRQHandler_PmlClock
+                00303f7c  0030405f  000000e4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00303f7c   IRQHandler_PmlClock
+    .text.IRQHandler_PmlSvld
+                00304060  00304169  0000010a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00304060   IRQHandler_PmlSvld
+    <padding>   0030416a  0030416b  00000002
+    .text.IRQHandler_ProtocolTimerOutCmp
+                0030416c  00304247  000000dc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                0030416c   IRQHandler_ProtocolTimerOutCmp4
+                0030416c   IRQHandler_ProtocolTimerOutCmp5
+                0030416c   IRQHandler_ProtocolTimerOutCmp
+                0030416c   IRQHandler_ProtocolTimerOutCmp6
+                0030416c   IRQHandler_ProtocolTimerOutCmp7
+                0030416c   IRQHandler_ProtocolTimerOutCmp2
+    .text.IRQHandler_ProtocolTimerSync
+                00304248  0030431d  000000d6  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00304248   IRQHandler_ProtocolTimerSync
+    <padding>   0030431e  0030431f  00000002
+    .text.IRQHandler_RcCalib
+                00304320  0030442f  00000110  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+                00304320   IRQHandler_RcCalib
+    .text.IRQHandler_SWI
+                00304430  00304509  000000da  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                00304430   IRQHandler_SWI4
+                00304430   IRQHandler_SWI7
+                00304430   IRQHandler_SWI5
+                00304430   IRQHandler_SWI2
+                00304430   IRQHandler_SWI6
+                00304430   IRQHandler_SWI
+                00304430   IRQHandler_SWI3
+    <padding>   0030450a  0030450b  00000002
+    .text.IRQHandler_SleepTimerFullVal
+                0030450c  003045d9  000000ce  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                0030450c   IRQHandler_SleepTimerFullVal
+    <padding>   003045da  003045db  00000002
+    .text.IRQHandler_SleepTimerOutCmp
+                003045dc  003046b7  000000dc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+                003045dc   IRQHandler_SleepTimerOutCmp1
+                003045dc   IRQHandler_SleepTimerOutCmp3
+                003045dc   IRQHandler_SleepTimerOutCmp2
+                003045dc   IRQHandler_SleepTimerOutCmp0
+                003045dc   IRQHandler_SleepTimerOutCmp
+    .text.IRQ_Cleaning
+                003046b8  003046fb  00000044  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                003046b8   IRQ_Cleaning
+    .text.IRQ_EnableAfterRestore
+                003046fc  00304711  00000016  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                003046fc   IRQ_EnableAfterRestore
+    <padding>   00304712  00304713  00000002
+    .text.IRQ_Init
+                00304714  00304757  00000044  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                00304714   IRQ_Init
+    .text.IRQ_Restore
+                00304758  003047a5  0000004e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                00304758   IRQ_Restore
+    <padding>   003047a6  003047a7  00000002
+    .text.IRQ_Store
+                003047a8  00304801  0000005a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                003047a8   IRQ_Store
+    <padding>   00304802  00304803  00000002
+    .text.NVMEntry_CopyJLITable
+                00304804  0030483d  0000003a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+                00304804   NVMEntry_CopyJLITable
+    <padding>   0030483e  0030483f  00000002
+    .text.NVM_ApplicationEntry
+                00304840  003048b7  00000078  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+                00304840   NVM_ApplicationEntry
+    .text.NVM_ConfigModules
+                003048b8  00304907  00000050  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+                003048b8   NVM_ConfigModules
+    .text.NVM_EntryWithStackPointerSet
+                00304908  003049e1  000000da  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+                00304908   NVM_EntryWithStackPointerSet
+    <padding>   003049e2  003049e3  00000002
+    .text.NVM_InitCopy
+                003049e4  00304ab1  000000ce  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+                003049e4   NVM_InitCopy
+    <padding>   00304ab2  00304ab3  00000002
+    .text.NullHandler
+                00304ab4  00304b0f  0000005c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+                00304ab4   IRQHandler_ProtocolTimerOutCmp3
+                00304ab4   IRQHandler_ProtocolTimerFullVal
+                00304ab4   NullHandler
+                00304ab4   IRQHandler_RadioTx
+                00304ab4   InstructionErrorHandler
+                00304ab4   IRQHandler_RadioRx
+                00304ab4   EV_ProtVHandler
+                00304ab4   IRQHandler_UniversalTimer2
+                00304ab4   EV_SWIHandler
+                00304ab4   IRQHandler_UniversalTimer3
+                00304ab4   EV_ExtensionHandler
+                00304ab4   IRQHandler_SpiMaster
+                00304ab4   EV_DCErrorHandler
+                00304ab4   IRQHandler_I2cMaster
+                00304ab4   IRQHandler_ArcWatchdog
+                00304ab4   IRQHandler_ADC
+                00304ab4   IRQHandler_ProtocolTimerOutCmp1
+                00304ab4   IRQHandler_QDec
+                00304ab4   MemoryErrorHandler
+                00304ab4   IRQHandler_USB
+                00304ab4   EV_PrivilegeVHandler
+                00304ab4   IRQHandler_CryptoUnit
+                00304ab4   EV_DivZeroHandler
+                00304ab4   IRQHandler_I2s
+                00304ab4   IRQHandler_ProtocolTimerOutCmp0
+                00304ab4   IRQHandler_SWI0
+                00304ab4   EV_MachineCheckHandler
+                00304ab4   IRQHandler_SWI1
+                00304ab4   EV_MalignedHandler
+                00304ab4   IRQHandler_SWI8
+                00304ab4   EV_TrapHandler
+                00304ab4   IRQHandler_SWI9
+    .text.PML_ConfigureSleepRcCalibBeforeSleep
+                00304b10  00304b3d  0000002e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304b10   PML_ConfigureSleepRcCalibBeforeSleep
+    <padding>   00304b3e  00304b3f  00000002
+    .text.PML_ConvertLf2HfClk
+                00304b40  00304b57  00000018  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304b40   PML_ConvertLf2HfClk
+    .text.PML_Init
+                00304b58  00304c0f  000000b8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304b58   PML_Init
+    .text.PML_PowerInit
+                00304c10  00304c23  00000014  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304c10   PML_PowerInit
+    .text.PML_PowerPreInit
+                00304c24  00304c6d  0000004a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304c24   PML_PowerPreInit
+    <padding>   00304c6e  00304c6f  00000002
+    .text.PML_PowerReStoreConfig
+                00304c70  00304c7d  0000000e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304c70   PML_PowerReStoreConfig
+    <padding>   00304c7e  00304c7f  00000002
+    .text.PML_PowerStoreConfig
+                00304c80  00304c81  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304c80   PML_PowerStoreConfig
+    <padding>   00304c82  00304c83  00000002
+    .text.PML_ReStoreConfig
+                00304c84  00304c91  0000000e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304c84   PML_ReStoreConfig
+    <padding>   00304c92  00304c93  00000002
+    .text.PML_RegisterWakeUpAction
+                00304c94  00304cb5  00000022  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304c94   PML_RegisterWakeUpAction
+    <padding>   00304cb6  00304cb7  00000002
+    .text.PML_SetConfigurationModeFlag
+                00304cb8  00304cc5  0000000e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    <padding>   00304cc6  00304cc7  00000002
+    .text.PML_SetDcdcTimingConst
+                00304cc8  00304cff  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304cc8   PML_SetDcdcTimingConst
+    .text.PML_SetLfClkSource
+                00304d00  00304d2b  0000002c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304d00   PML_SetLfClkSource
+    .text.PML_SetRfOutputPower
+                00304d2c  00304df9  000000ce  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304d2c   PML_SetRfOutputPower
+    <padding>   00304dfa  00304dfb  00000002
+    .text.PML_SetRfOutputPowerRegisters
+                00304dfc  00304ecb  000000d0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304dfc   PML_SetRfOutputPowerRegisters
+    .text.PML_StoreConfig
+                00304ecc  00304ed9  0000000e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304ecc   PML_StoreConfig
+    <padding>   00304eda  00304edb  00000002
+    .text.PML_UpdateDCDC
+                00304edc  00304f05  0000002a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304edc   PML_UpdateDCDC
+    <padding>   00304f06  00304f07  00000002
+    .text.PML_UpdateDcdcParameters
+                00304f08  00304f2f  00000028  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304f08   PML_UpdateDcdcParameters
+    .text.PML_UpdateResumeTime
+                00304f30  00304f51  00000022  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304f30   PML_UpdateResumeTime
+    <padding>   00304f52  00304f53  00000002
+    .text.PML_UpdateScDbMode
+                00304f54  00304f65  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                00304f54   PML_UpdateScDbMode
+    <padding>   00304f66  00304f67  00000002
+    .text.PML_UseLfXtalClk
+                00304f68  00304f9f  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                00304f68   PML_UseLfXtalClk
+    .text.PML_VoltMonitorInit
+                00304fa0  00304fd7  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00304fa0   PML_VoltMonitorInit
+    .text.PML_VoltMonitorPreInit
+                00304fd8  00304ff9  00000022  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00304fd8   PML_VoltMonitorPreInit
+    <padding>   00304ffa  00304ffb  00000002
+    .text.PML_VoltMonitorReStoreConfig
+                00304ffc  0030500d  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00304ffc   PML_VoltMonitorReStoreConfig
+    <padding>   0030500e  0030500f  00000002
+    .text.PML_VoltMonitorStoreConfig
+                00305010  00305011  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305010   PML_VoltMonitorStoreConfig
+    <padding>   00305012  00305013  00000002
+    .text.ProtTimer_Init
+                00305014  00305041  0000002e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                00305014   ProtTimer_Init
+    <padding>   00305042  00305043  00000002
+    .text.ProtTimer_RestartAfterSleep
+                00305044  003050ff  000000bc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                00305044   ProtTimer_RestartAfterSleep
+    .text.ProtTimer_RestoreAdjust
+                00305100  0030515b  0000005c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                00305100   ProtTimer_RestoreAdjust
+    .text.ProtTimer_RestoreConfig
+                0030515c  003051bb  00000060  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                0030515c   ProtTimer_RestoreConfig
+    .text.ProtTimer_RestoreStart
+                003051bc  00305207  0000004c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                003051bc   ProtTimer_RestoreStart
+    .text.ProtTimer_StoreConfig
+                00305208  003052e9  000000e2  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                00305208   ProtTimer_StoreConfig
+    <padding>   003052ea  003052eb  00000002
+    .text.ProtTimer_UpdateRestartTime
+                003052ec  00305317  0000002c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                003052ec   ProtTimer_UpdateRestartTime
+    .text.RCCAL_RegisterCalibrationLimits
+                00305318  00305323  0000000c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+                00305318   RCCAL_RegisterCalibrationLimits
+    .text.SleepTimer_Init
+                00305324  0030532f  0000000c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+                00305324   SleepTimer_Init
+    .text.SleepTimer_ReStore
+                00305330  00305331  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+                00305330   SleepTimer_ReStore
+    <padding>   00305332  00305333  00000002
+    .text.SleepTimer_Store
+                00305334  00305335  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+                00305334   SleepTimer_Store
+    <padding>   00305336  00305337  00000002
+    .text.System_Init
+                00305338  00305339  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+                00305338   System_Init
+    <padding>   0030533a  0030533b  00000002
+    .text.System_Restore
+                0030533c  003053bd  00000082  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+                0030533c   System_Restore
+    <padding>   003053be  003053bf  00000002
+    .text.System_Save
+                003053c0  00305441  00000082  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+                003053c0   System_Save
+    <padding>   00305442  00305443  00000002
+    .text.Transport_Init
+                00305444  0030549f  0000005c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+                00305444   Transport_Init
+    .text.UART_RxCallback
+                003054a0  003054d5  00000036  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    <padding>   003054d6  003054d7  00000002
+    .text.VoltMon_CompareVbat1Lvl
+                003054d8  00305515  0000003e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003054d8   VoltMon_CompareVbat1Lvl
+    <padding>   00305516  00305517  00000002
+    .text.VoltMon_CompareVccLvl
+                00305518  00305555  0000003e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305518   VoltMon_CompareVccLvl
+    <padding>   00305556  00305557  00000002
+    .text.VoltMon_ConfigureAppModeLimits
+                00305558  0030562d  000000d6  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305558   VoltMon_ConfigureAppModeLimits
+    <padding>   0030562e  0030562f  00000002
+    .text.VoltMon_DoMeasurement
+                00305630  00305697  00000068  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305630   VoltMon_DoMeasurement
+    .text.VoltMon_GetFlagLimitRf0dBm
+                00305698  003056a9  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305698   VoltMon_GetFlagLimitRf0dBm
+    <padding>   003056aa  003056ab  00000002
+    .text.VoltMon_GetFlagLimitRf10dBm
+                003056ac  003056b9  0000000e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003056ac   VoltMon_GetFlagLimitRf10dBm
+    <padding>   003056ba  003056bb  00000002
+    .text.VoltMon_GetFlagLimitRf3dBm
+                003056bc  003056cd  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003056bc   VoltMon_GetFlagLimitRf3dBm
+    <padding>   003056ce  003056cf  00000002
+    .text.VoltMon_GetFlagLimitRf4dBm
+                003056d0  003056e1  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003056d0   VoltMon_GetFlagLimitRf4dBm
+    <padding>   003056e2  003056e3  00000002
+    .text.VoltMon_GetFlagLimitRf5dBm
+                003056e4  003056f5  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003056e4   VoltMon_GetFlagLimitRf5dBm
+    <padding>   003056f6  003056f7  00000002
+    .text.VoltMon_GetFlagLimitRf6dBm
+                003056f8  00305709  00000012  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003056f8   VoltMon_GetFlagLimitRf6dBm
+    <padding>   0030570a  0030570b  00000002
+    .text.VoltMon_GetVbat1Voltage
+                0030570c  00305737  0000002c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                0030570c   VoltMon_GetVbat1Voltage
+    .text.VoltMon_GetVccVoltage
+                00305738  00305763  0000002c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305738   VoltMon_GetVccVoltage
+    .text.VoltMon_GetVoltage
+                00305764  00305797  00000034  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305764   VoltMon_GetVoltage
+    .text.VoltMon_SetVoltageMonitorEnable
+                00305798  003057bf  00000028  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                00305798   VoltMon_SetVoltageMonitorEnable
+    .text.VoltMon_SetVoltageMonitorLevel
+                003057c0  003057e5  00000026  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003057c0   VoltMon_SetVoltageMonitorLevel
+    <padding>   003057e6  003057e7  00000002
+    .text.VoltMon_UpdateFlags
+                003057e8  00305829  00000042  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                003057e8   VoltMon_UpdateFlags
+    <padding>   0030582a  0030582b  00000002
+    .text._atoi 0030582c  00305853  00000028  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._etoa 00305854  00305bb5  00000362  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    <padding>   00305bb6  00305bb7  00000002
+    .text._ftoa 00305bb8  00305ed7  00000320  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._initdatCopy
+                00305ed8  00305eeb  00000014  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+                00305ed8   _initdatCopy
+    .text._ntoa_format
+                00305eec  0030602b  00000140  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._ntoa_long
+                0030602c  003060b7  0000008c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._ntoa_long_long
+                003060b8  0030617f  000000c8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._out_char
+                00306180  00306187  00000008  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._out_null
+                00306188  00306189  00000002  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    <padding>   0030618a  0030618b  00000002
+    .text._out_rev
+                0030618c  0030620b  00000080  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text._putchar
+                0030620c  00306241  00000036  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+                0030620c   _putchar
+    <padding>   00306242  00306243  00000002
+    .text._vsnprintf
+                00306244  00306703  000004c0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .text.printf_
+                00306704  0030672d  0000002a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+                00306704   printf_
+    <padding>   0030672e  0030672f  00000002
+    .text.puts_callback
+                00306730  00306735  00000006  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+    <padding>   00306736  00306737  00000002
+    .text.validate
+                00306738  00306757  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+                00306738   validate
+
+.rom_nvm_const
+         data   00306758  00306789  00000032
+
+    .rom_nvm_const.gIRQ_PRIORITY
+                00306758  00306789  00000032  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                00306758   gIRQ_PRIORITY
+
+.rodata  data   00306790  0030682f  000000a0
+
+    .rodata_in_data..L.str
+                00306790  00306794  00000005  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .rodata_in_data..L.str
+                00306795  00306798  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .rodata_in_data..L.str.1
+                00306799  0030679f  00000007  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .rodata_in_data..L.str.1
+                003067a0  003067a4  00000005  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .rodata_in_data..L.str.2
+                003067a5  003067b5  00000011  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .rodata_in_data..L.str.2
+                003067b6  003067ba  00000005  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .rodata_in_data..L.str.3
+                003067bb  003067c7  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .rodata_in_data..L.str.3
+                003067c8  003067cb  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .rodata_in_data..L__const.NVM_ApplicationEntry.string
+                003067cc  003067de  00000013  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    <padding>   003067df  003067df  00000001
+    .rodata_in_data._ftoa.pow10
+                003067e0  0030682f  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+
+.initdat lit    00306830  00306b2b  000002fc
+
+    .initdat    00306830  00306b2b  000002fc  <Linker Defined>
+                00306830   _initdat
+                00306b2c   _einitdat
+
+.ctors   bss    00306b2c  00306b2b  00000000
+
+
+.empty_app_entry
+         text   00308000  00307fff  00000000
+
+
+.nvm_info
+         text   00400000  003fffff  00000000
+
+
+.nvm_info_const
+         bss    00400000  003fffff  00000000
+
+
+.rom_used_pram
+         bss    00801000  00801103  00000104
+
+
+.persistent
+         bss    00801104  008012ab  000001a8
+
+    .persistent.gBOOT_hfXtalRequired
+                00801104  00801107  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00801104   gBOOT_hfXtalRequired
+    .persistent.gBOOT_initTime
+                00801108  0080110b  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                00801108   gBOOT_initTime
+    .persistent.gIRQ_StoredConfig
+                0080110c  008011c7  000000bc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                0080110c   gIRQ_StoredConfig
+    .persistent.gPML_PersistentMemory
+                008011c8  008011f7  00000030  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+                008011c8   gPML_PersistentMemory
+    .persistent.gProtTimer_PersistentMemory
+                008011f8  00801247  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+                008011f8   gProtTimer_PersistentMemory
+    .persistent.gSystem_PersistentMemory
+                00801248  00801297  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+                00801248   gSystem_PersistentMemory
+    .persistent.gVoltMon_PersistentMemory
+                00801298  008012ab  00000014  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+                00801298   gVoltMon_PersistentMemory
+
+.tls     bss    008012ac  008012ab  00000000
+
+
+.data    bss    008012ac  008012bf  00000014
+
+    .data.gPmlRfPower
+                008012ac  008012bf  00000014  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                008012ac   gPmlRfPower
+
+.bss     bss    008012c0  0080131b  0000005c
+
+    .bss.gActionTrigger
+                008012c0  008012c3  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .bss.gBOOT_Config
+                008012c4  008012cb  00000008  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                008012c4   gBOOT_Config
+    .bss.gISR_pIRQUserHandler_ARCTimer0
+                008012cc  008012cf  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012cc   gISR_pIRQUserHandler_ARCTimer0
+    .bss.gISR_pIRQUserHandler_ARCTimer1
+                008012d0  008012d3  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012d0   gISR_pIRQUserHandler_ARCTimer1
+    .bss.gISR_pIRQUserHandler_GPIO
+                008012d4  008012d7  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012d4   gISR_pIRQUserHandler_GPIO
+    .bss.gISR_pIRQUserHandler_ProtoTimerOutCmp
+                008012d8  008012db  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012d8   gISR_pIRQUserHandler_ProtoTimerOutCmp
+    .bss.gISR_pIRQUserHandler_ProtoTimerSync
+                008012dc  008012df  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012dc   gISR_pIRQUserHandler_ProtoTimerSync
+    .bss.gISR_pIRQUserHandler_SWI
+                008012e0  008012e3  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012e0   gISR_pIRQUserHandler_SWI
+    .bss.gISR_pIRQUserHandler_SleepTimerFullValue
+                008012e4  008012e7  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012e4   gISR_pIRQUserHandler_SleepTimerFullValue
+    .bss.gISR_pIRQUserHandler_SleepTimerOutCmp
+                008012e8  008012eb  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+                008012e8   gISR_pIRQUserHandler_SleepTimerOutCmp
+    .bss.gPmlAppMode
+                008012ec  008012ef  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                008012ec   gPmlAppMode
+    .bss.gPmlVoltage
+                008012f0  008012f0  00000001  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                008012f0   gPmlVoltage
+    <padding>   008012f1  008012f3  00000003
+    .bss.gRCCAL_cfg
+                008012f4  008012fb  00000008  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+                008012f4   gRCCAL_cfg
+    .bss.gRCCAL_values
+                008012fc  00801303  00000008  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+                008012fc   gRCCAL_values
+    .bss.g_counter
+                00801304  00801307  00000004  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+                00801304   g_counter
+    .bss.pBOOT_IrqActionRoutineCallback
+                00801308  0080130b  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .bss.pIRQHandlerCallback
+                0080130c  0080130f  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .bss.pIRQHandlerLfRcLpCallback
+                00801310  00801313  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .bss.pPML_UseLfXtalCallback
+                00801314  00801317  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .bss.pRCCAL_CounterReadyCallback
+                00801318  0080131b  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+
+.heap    bss    0080131c  0080131b  00000000
+
+
+.stack_allocated_space
+         bss    0080eb64  0080fb63  00001000
+
+
+.config  bss    0080fb64  0080fe0f  000002ac
+
+    .master_config.gConfig
+                0080fb64  0080fbab  00000048  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+                0080fb64   gConfig
+    .config.gIRQ_Config
+                0080fbac  0080fbc7  0000001c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+                0080fbac   gIRQ_Config
+    .config.gPML_Config
+                0080fbc8  0080fc07  00000040  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+                0080fbc8   gPML_Config
+    .config.gPML_PowerConfig
+                0080fc08  0080fd63  0000015c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+                0080fc08   gPML_PowerConfig
+    .config.gPROT_Config
+                0080fd64  0080fd7b  00000018  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+                0080fd64   gPROT_Config
+    .config.gSLEEP_Config
+                0080fd7c  0080fd8f  00000014  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+                0080fd7c   gSLEEP_Config
+    .config.gSystem_Config
+                0080fd90  0080fdef  00000060  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+                0080fd90   gSystem_Config
+    .config.gVoltMon_Config
+                0080fdf0  0080fe0f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+                0080fdf0   gVoltMon_Config
+
+.non_persistent
+         bss    0080fe10  0080fe1f  00000010
+
+    .non_persistent.gBOOT_bootTime
+                0080fe10  0080fe13  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                0080fe10   gBOOT_bootTime
+    .non_persistent.gBOOT_hfStartTimeInLfClk
+                0080fe14  0080fe17  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+                0080fe14   gBOOT_hfStartTimeInLfClk
+    .non_persistent.gNVM_ApplicationEntry
+                0080fe18  0080fe1b  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+                0080fe18   gNVM_ApplicationEntry
+    .non_persistent.gNVM_ConfigModules
+                0080fe1c  0080fe1f  00000004  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+                0080fe1c   gNVM_ConfigModules
+
+.rom_used_npram
+         bss    0080fe20  0080ffff  000001e0
+
+
+.arcextmap
+         info   00000000  0000095b  0000095c
+
+    .arcextmap.aux.1408
+                00000000  0000000d  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1409
+                0000000e  0000001c  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1410
+                0000001d  0000002a  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1411
+                0000002b  00000039  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1432
+                0000003a  00000049  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1438
+                0000004a  0000005c  00000013  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1439
+                0000005d  0000006b  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1664
+                0000006c  00000079  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1665
+                0000007a  00000087  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1666
+                00000088  00000095  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1667
+                00000096  000000a4  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1668
+                000000a5  000000b3  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1669
+                000000b4  000000c1  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1670
+                000000c2  000000d0  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1671
+                000000d1  000000df  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1672
+                000000e0  000000ed  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1673
+                000000ee  000000fc  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1680
+                000000fd  0000010b  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1681
+                0000010c  00000119  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.1682
+                0000011a  00000127  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.256
+                00000128  00000136  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.257
+                00000137  00000147  00000011  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.258
+                00000148  00000156  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.33
+                00000157  00000165  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.34
+                00000166  00000176  00000011  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.35
+                00000177  00000185  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.768
+                00000186  00000194  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.aux.769
+                00000195  000001a5  00000011  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.auxreg.1666
+                000001a6  000001b7  00000012  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.auxreg.1668
+                000001b8  000001ca  00000013  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.auxreg.1669
+                000001cb  000001dc  00000012  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.auxreg.1670
+                000001dd  000001ef  00000013  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.core.58
+                000001f0  000001f7  00000008  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.core.59
+                000001f8  000001ff  00000008  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.1.5.0
+                00000200  0000020b  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.1.5.1
+                0000020c  00000218  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.1.5.4f
+                00000219  00000225  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.0
+                00000226  0000022f  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.1
+                00000230  00000239  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.10
+                0000023a  00000244  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.11
+                00000245  0000024f  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.12
+                00000250  0000025a  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.13
+                0000025b  00000264  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.14
+                00000265  0000026e  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.15
+                0000026f  00000278  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.16
+                00000279  00000282  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.17
+                00000283  0000028c  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.2
+                0000028d  00000296  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.24
+                00000297  000002a2  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.25
+                000002a3  000002af  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.26
+                000002b0  000002b9  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.28
+                000002ba  000002c8  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.29
+                000002c9  000002d7  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.3
+                000002d8  000002e1  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.30
+                000002e2  000002f1  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.31
+                000002f2  00000301  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.32
+                00000302  00000310  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.33
+                00000311  0000031f  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.34
+                00000320  0000032c  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.35
+                0000032d  00000339  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.36
+                0000033a  00000347  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.37
+                00000348  00000355  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.38
+                00000356  00000364  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.39
+                00000365  00000373  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.4
+                00000374  0000037e  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.40
+                0000037f  0000038a  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.41
+                0000038b  00000397  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.42
+                00000398  000003a3  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.43
+                000003a4  000003b0  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.44
+                000003b1  000003bd  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.48
+                000003be  000003c7  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.49
+                000003c8  000003d2  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.5
+                000003d3  000003dc  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.6
+                000003dd  000003e7  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.7
+                000003e8  000003f1  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.8
+                000003f2  000003fc  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.5.9
+                000003fd  00000407  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.6.0
+                00000408  00000413  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.2.6.25
+                00000414  00000422  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.4.30
+                00000423  0000042c  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.4.31
+                0000042d  00000437  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.0
+                00000438  00000440  00000009  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.1
+                00000441  00000449  00000009  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.10
+                0000044a  00000453  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.11
+                00000454  0000045d  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.12
+                0000045e  00000468  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.13
+                00000469  00000475  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.13f
+                00000476  00000481  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.2
+                00000482  0000048a  00000009  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.20f
+                0000048b  00000497  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.21f
+                00000498  000004a4  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.22f
+                000004a5  000004b4  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.23f
+                000004b5  000004c4  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.28f
+                000004c5  000004d1  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.29f
+                000004d2  000004df  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.3
+                000004e0  000004e8  00000009  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.30f
+                000004e9  000004f5  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.31f
+                000004f6  00000503  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.32
+                00000504  00000511  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.33
+                00000512  0000051d  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.33f
+                0000051e  0000052a  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.34
+                0000052b  00000536  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.34f
+                00000537  00000543  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.35
+                00000544  0000054f  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.35f
+                00000550  0000055d  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.36
+                0000055e  00000569  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.36f
+                0000056a  00000575  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.37
+                00000576  00000581  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.37f
+                00000582  0000058d  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.38
+                0000058e  00000597  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.39
+                00000598  000005a1  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.40
+                000005a2  000005ae  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.41
+                000005af  000005bc  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.41f
+                000005bd  000005ca  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.42
+                000005cb  000005d6  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.43
+                000005d7  000005e3  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.44
+                000005e4  000005ef  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.45
+                000005f0  000005fc  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.46
+                000005fd  00000607  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.6
+                00000608  00000611  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.5.7
+                00000612  0000061b  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.0
+                0000061c  00000626  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.0f
+                00000627  00000634  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.1
+                00000635  0000063f  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.10
+                00000640  00000649  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.11
+                0000064a  00000654  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.12
+                00000655  0000065e  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.13
+                0000065f  00000669  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.14
+                0000066a  00000674  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.15
+                00000675  00000680  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.16
+                00000681  0000068a  0000000a  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.17
+                0000068b  00000699  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.17f
+                0000069a  000006a9  00000010  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.18
+                000006aa  000006b4  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.19
+                000006b5  000006bf  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.1f
+                000006c0  000006cc  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.2
+                000006cd  000006d7  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.20
+                000006d8  000006e5  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.21
+                000006e6  000006f1  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.22
+                000006f2  000006fe  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.23
+                000006ff  0000070b  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.24
+                0000070c  00000718  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.25
+                00000719  00000725  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.26
+                00000726  00000734  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.27
+                00000735  00000742  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.27f
+                00000743  00000751  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.28
+                00000752  0000075d  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.29
+                0000075e  00000769  0000000c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.2f
+                0000076a  00000778  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.3
+                00000779  00000787  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.30
+                00000788  00000794  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.31
+                00000795  000007a1  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.32
+                000007a2  000007ae  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.33
+                000007af  000007bc  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.34
+                000007bd  000007c9  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.35
+                000007ca  000007d7  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.36
+                000007d8  000007e4  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.37
+                000007e5  000007f2  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.38
+                000007f3  000007ff  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.39
+                00000800  0000080d  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.3f
+                0000080e  0000083c  0000002f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.4
+                0000083d  0000084a  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.40
+                0000084b  00000857  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.41
+                00000858  00000865  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.42
+                00000866  00000872  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.43
+                00000873  00000880  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.44
+                00000881  0000088e  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.45
+                0000088f  0000089d  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.4f
+                0000089e  000008cd  00000030  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.5f
+                000008ce  000008db  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.6f
+                000008dc  000008e9  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.7
+                000008ea  000008f4  0000000b  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.7f
+                000008f5  00000901  0000000d  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.8
+                00000902  00000931  00000030  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.8f
+                00000932  00000940  0000000f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.6.9f
+                00000941  0000094e  0000000e  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .arcextmap.inst.3.7.16
+                0000094f  0000095b  0000000d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+
+.comment info   00000000  00000542  00000543
+
+    .comment    00000000  00000032  00000033  <Linker Defined>
+    .comment    00000033  000001df  000001ad  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .comment    000001e0  00000384  000001a5  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .comment    00000385  00000542  000001be  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(l64x32divnorm.o)
+
+.debug_abbrev
+         info   00000000  00002594  00002595
+
+    .debug_abbrev
+                00000000  000001aa  000001ab  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_abbrev
+                000001ab  00000274  000000ca  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .debug_abbrev
+                00000275  0000039b  00000127  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_abbrev
+                0000039c  00000596  000001fb  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_abbrev
+                00000597  0000065a  000000c4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+    .debug_abbrev
+                0000065b  0000067d  00000023  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+    .debug_abbrev
+                0000067e  000008f3  00000276  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_abbrev
+                000008f4  0000094f  0000005c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+    .debug_abbrev
+                00000950  00000c59  0000030a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_abbrev
+                00000c5a  00000d5f  00000106  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_abbrev
+                00000d60  00000d8a  0000002b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_abbrev
+                00000d8b  00000f07  0000017d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_abbrev
+                00000f08  00000f89  00000082  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_abbrev
+                00000f8a  0000124f  000002c6  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_abbrev
+                00001250  000015a6  00000357  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_abbrev
+                000015a7  00001791  000001eb  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_abbrev
+                00001792  000017ff  0000006e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+    .debug_abbrev
+                00001800  0000189a  0000009b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+    .debug_abbrev
+                0000189b  00001bcd  00000333  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_abbrev
+                00001bce  00001c5c  0000008f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+    .debug_abbrev
+                00001c5d  00001e28  000001cc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_abbrev
+                00001e29  00002075  0000024d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_abbrev
+                00002076  00002249  000001d4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_abbrev
+                0000224a  00002457  0000020e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_abbrev
+                00002458  00002594  0000013d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_aranges
+         info   00000000  00000987  00000988
+
+    .debug_aranges
+                00000000  0000003f  00000040  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_aranges
+                00000040  0000005f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .debug_aranges
+                00000060  00000097  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_aranges
+                00000098  000000ef  00000058  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_aranges
+                000000f0  0000010f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+    .debug_aranges
+                00000110  0000012f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+    .debug_aranges
+                00000130  00000187  00000058  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_aranges
+                00000188  000001a7  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+    .debug_aranges
+                000001a8  00000257  000000b0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_aranges
+                00000258  0000028f  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_aranges
+                00000290  000002af  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_aranges
+                000002b0  0000030f  00000060  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_aranges
+                00000310  000003a7  00000098  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_aranges
+                000003a8  000004af  00000108  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_aranges
+                000004b0  000005af  00000100  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_aranges
+                000005b0  00000657  000000a8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_aranges
+                00000658  00000677  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+    .debug_aranges
+                00000678  00000697  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+    .debug_aranges
+                00000698  00000777  000000e0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_aranges
+                00000778  00000797  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+    .debug_aranges
+                00000798  000007e7  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_aranges
+                000007e8  00000877  00000090  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_aranges
+                00000878  00000897  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_aranges
+                00000898  0000094f  000000b8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_aranges
+                00000950  00000987  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_frame
+         info   00000000  00002b43  00002b44
+
+    .debug_frame
+                00000000  000000a3  000000a4  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_frame
+                000000a4  0000015f  000000bc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_frame
+                00000160  0000026b  0000010c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_frame
+                0000026c  00000353  000000e8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_frame
+                00000354  00000573  00000220  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_frame
+                00000574  000006bf  0000014c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_frame
+                000006c0  00000753  00000094  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_frame
+                00000754  00000bbf  0000046c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_frame
+                00000bc0  00000d6b  000001ac  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_frame
+                00000d6c  000011cb  00000460  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_frame
+                000011cc  000016bb  000004f0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_frame
+                000016bc  0000197f  000002c4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_frame
+                00001980  00001daf  00000430  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_frame
+                00001db0  00001eef  00000140  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_frame
+                00001ef0  00002127  00000238  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_frame
+                00002128  000021a7  00000080  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_frame
+                000021a8  000026d7  00000530  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_frame
+                000026d8  000027b7  000000e0  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+    .debug_frame
+                000027b8  0000288f  000000d8  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(l64x32divnorm.o)
+    .debug_frame
+                00002890  000028ef  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ldivnorm.o)
+    .debug_frame
+                000028f0  00002963  00000074  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dcmpIEEE.o)
+    .debug_frame
+                00002964  000029c3  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dflt.o)
+    .debug_frame
+                000029c4  00002a23  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dmul.o)
+    .debug_frame
+                00002a24  00002a83  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dadd.o)
+    .debug_frame
+                00002a84  00002ae3  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(dtrunc.o)
+    .debug_frame
+                00002ae4  00002b43  00000060  C:/ARC/MetaWare/arc/lib/buildlib/em9305/libmw.a(ddiv.o)
+
+.debug_info
+         info   00000000  0002fa58  0002fa59
+
+    .debug_info 00000000  0000054b  0000054c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_info 0000054c  000007ab  00000260  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .debug_info 000007ac  0000102c  00000881  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_info 0000102d  0000471b  000036ef  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_info 0000471c  00004e90  00000775  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+    .debug_info 00004e91  00004f34  000000a4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+    .debug_info 00004f35  00006a20  00001aec  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_info 00006a21  00006a79  00000059  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+    .debug_info 00006a7a  0000bfe1  00005568  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_info 0000bfe2  0000c2fd  0000031c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_info 0000c2fe  0000c338  0000003b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_info 0000c339  0000f763  0000342b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_info 0000f764  0000f968  00000205  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_info 0000f969  00015404  00005a9c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_info 00015405  0001a814  00005410  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_info 0001a815  0001bf9e  0000178a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_info 0001bf9f  0001c0dd  0000013f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+    .debug_info 0001c0de  0001c37c  0000029f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+    .debug_info 0001c37d  000222d3  00005f57  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_info 000222d4  00022913  00000640  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+    .debug_info 00022914  00026eca  000045b7  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_info 00026ecb  0002b6b9  000047ef  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_info 0002b6ba  0002ea8e  000033d5  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_info 0002ea8f  0002f7d3  00000d45  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_info 0002f7d4  0002fa58  00000285  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_line
+         info   00000000  000048b1  000048b2
+
+    .debug_line 00000000  0000038e  0000038f  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_line 0000038f  00000471  000000e3  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .debug_line 00000472  00000682  00000211  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_line 00000683  00000936  000002b4  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_line 00000937  00000a34  000000fe  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+    .debug_line 00000a35  00000a88  00000054  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+    .debug_line 00000a89  00000d2d  000002a5  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_line 00000d2e  00000d78  0000004b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+    .debug_line 00000d79  0000140c  00000694  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_line 0000140d  0000156b  0000015f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_line 0000156c  000015c5  0000005a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_line 000015c6  000018f4  0000032f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_line 000018f5  00001a17  00000123  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_line 00001a18  0000229b  00000884  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_line 0000229c  00002a04  00000769  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_line 00002a05  00002e20  0000041c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_line 00002e21  00002ec9  000000a9  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+    .debug_line 00002eca  00002fa2  000000d9  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+    .debug_line 00002fa3  000037c1  0000081f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_line 000037c2  000038b9  000000f8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+    .debug_line 000038ba  00003b4b  00000292  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_line 00003b4c  00003e51  00000306  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_line 00003e52  00003ff6  000001a5  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_line 00003ff7  00004721  0000072b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_line 00004722  000048b1  00000190  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_loc
+         info   00000000  00003a05  00003a06
+
+    .debug_loc  00000000  0000006b  0000006c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_loc  0000006c  000001f1  00000186  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_loc  000001f2  00000283  00000092  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_loc  00000284  000005e4  00000361  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_loc  000005e5  0000086b  00000287  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_loc  0000086c  00000923  000000b8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_loc  00000924  00000f32  0000060f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_loc  00000f33  00001404  000004d2  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_loc  00001405  000017af  000003ab  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_loc  000017b0  00001d82  000005d3  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_loc  00001d83  00001e70  000000ee  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_loc  00001e71  00001ecc  0000005c  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_loc  00001ecd  00001f1b  0000004f  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_loc  00001f1c  00003868  0000194d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_loc  00003869  00003a05  0000019d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_pubnames
+         info   00000000  0000001f  00000020
+
+    .debug_pubnames
+                00000000  0000001f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.s.obj)
+
+.debug_ranges
+         info   00000000  00000837  00000838
+
+    .debug_ranges
+                00000000  0000001f  00000020  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_ranges
+                00000020  0000003f  00000020  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_ranges
+                00000040  00000087  00000048  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_ranges
+                00000088  0000011f  00000098  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_ranges
+                00000120  00000187  00000068  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_ranges
+                00000188  000001f7  00000070  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_ranges
+                000001f8  00000247  00000050  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_ranges
+                00000248  0000028f  00000048  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_ranges
+                00000290  00000377  000000e8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_ranges
+                00000378  0000047f  00000108  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_ranges
+                00000480  000004ff  00000080  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_ranges
+                00000500  000005d7  000000d8  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_ranges
+                000005d8  0000060f  00000038  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_ranges
+                00000610  0000067f  00000070  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_ranges
+                00000680  00000697  00000018  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_ranges
+                00000698  0000080f  00000178  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_ranges
+                00000810  00000837  00000028  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.debug_str
+         info   00000000  0000683e  0000683f
+
+    .debug_str  00000000  00000a0b  00000a0c  CMakeFiles/printf_example_di05.dir/nvm_main.c.obj
+    .debug_str  00000a0c  00000bd7  000001cc  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(config.c.obj)
+    .debug_str  00000a0c  00000e3f  00000434  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system.c.obj)
+    .debug_str  00000a0c  000022da  000018cf  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq.c.obj)
+    .debug_str  00000a0c  00000a51  00000046  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(system_memory.c.obj)
+    .debug_str  00000a0c  000013a5  0000099a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/nvm_entry/lib_nvm_entry.a(nvm_entry.c.obj)
+    .debug_str  00000a0c  00000a53  00000048  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(vectors.c.obj)
+    .debug_str  00000a0c  000010f9  000006ee  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(boot.c.obj)
+    .debug_str  00000a0c  00000b51  00000146  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(initcopy.c.obj)
+    .debug_str  00000a0c  00000a3b  00000030  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_core/lib_em_core.a(isr.c.obj)
+    .debug_str  00000a0c  00000b3b  00000130  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_system_isr.c.obj)
+    .debug_str  00000a0c  00000c82  00000277  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/em_hw_api/lib_em_hw_api.a(irq_user_isr.c.obj)
+    .debug_str  00000a0c  00001514  00000b09  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml.c.obj)
+    .debug_str  00000a0c  00000fa8  0000059d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor.c.obj)
+    .debug_str  00000a0c  00000f55  0000054a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_power.c.obj)
+    .debug_str  00000a0c  00000a45  0000003a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_memory.c.obj)
+    .debug_str  00000a0c  00000a56  0000004b  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/pml/lib_pml.a(pml_volt_monitor_memory.c.obj)
+    .debug_str  00000a0c  00001553  00000b48  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer.c.obj)
+    .debug_str  00000a0c  00000a55  0000004a  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/prot_timer/lib_prot_timer.a(prot_timer_memory.c.obj)
+    .debug_str  00000a0c  00000b68  0000015d  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/sleep_timer/lib_sleep_timer.a(sleep_timer.c.obj)
+    .debug_str  00000a0c  00000ca9  0000029e  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/rc_calib/lib_rc_calib.a(rc_calib.c.obj)
+    .debug_str  00000a0c  00000a7b  00000070  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/transport/lib_transport.a(transport.c.obj)
+    .debug_str  00000a0c  00000c53  00000248  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(printf.c.obj)
+    .debug_str  00000a0c  00000a82  00000077  C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/libs/third_party/printf/lib_printf.a(puts.c.obj)
+
+.strtab  info   00000000  00003296  00003297
+
+    .strtab     00000000  00003296  00003297  printf_example_di05.elf
+
+.symtab  info   00000000  00003e6f  00003e70
+
+    .symtab     00000000  00003e6f  00003e70  printf_example_di05.elf
+
+.shstrtab
+         info   00000000  000001af  000001b0
+
+    .shstrtab   00000000  000001af  000001b0  printf_example_di05.elf
+
+.ARC.attributes
+         info   00000000  0000004e  0000004f
+
+    .ARC.attributes
+                00000000  0000004e  0000004f  printf_example_di05.elf
+
+INITDATA Contents
+-----------------
+                                   Uncompressed  Compressed
+    Section    Offset    Address    Size          Size           %Compression
+    -------    ------    --------   ------------  ------------   -------
+    .data      0x8      0x8012ac    20 (0x14)     20 (0x14)      100.00%
+    .config    0x24     0x80fb64    684 (0x2ac)   684 (0x2ac)    100.00%
+    .non_persistent 
+               0x2d8    0x80fe10    16 (0x10)     16 (0x10)      100.00%
+    .bss       0x2f0    0x8012c0    92 (0x5c)     4 (0x4)          4.35%
+
+
+START ADDRESS:	00302028

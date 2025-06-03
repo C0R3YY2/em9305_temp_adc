@@ -1,0 +1,6 @@
+SET(dst "C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/emcore/bin/v4.2/my_flavor")
+SET(tgt "C:/Users/corey/Downloads/EM9305_EM_BLEU_SDK_v4.2/build/emcore/custom")
+FILE(INSTALL DESTINATION "${dst}" TYPE FILE FILES "${tgt}/custom_emcore_my_flavor_di04.sym")
+FILE(INSTALL DESTINATION "${dst}" TYPE FILE FILES "${tgt}/custom_emcore_my_flavor_di04.ihex")
+FILE(INSTALL DESTINATION "${dst}/internal" TYPE EXECUTABLE FILES "${tgt}/custom_emcore_my_flavor_di04.elf")
+FILE(INSTALL DESTINATION "${dst}/internal" TYPE FILE OPTIONAL FILES "${tgt}/custom_emcore_my_flavor_di04.asm")

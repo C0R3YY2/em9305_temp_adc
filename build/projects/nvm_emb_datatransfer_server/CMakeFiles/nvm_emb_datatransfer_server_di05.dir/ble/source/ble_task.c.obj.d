@@ -1,0 +1,48 @@
+projects/nvm_emb_datatransfer_server/CMakeFiles/nvm_emb_datatransfer_server_di05.dir/ble/source/ble_task.c.obj: \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\ble\source\ble_task.c \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\emb_configs\verified\cfg_emb_peripheral.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\ble\source\ble.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_os.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_types.h \
+  C:\ARC\MetaWare\arc\inc\stdbool.h C:\ARC\MetaWare\arc\inc\stddef.h \
+  C:\ARC\MetaWare\arc\inc\sizet.h C:\ARC\MetaWare\arc\inc\stdint.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_queue.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\ble\includes\ble_task.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\projects\nvm_emb_datatransfer_server\my_app\includes\my_app_signals.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\QPC\includes\qep.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\interrupts.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\types.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\macros.h \
+  C:\ARC\MetaWare\arc\inc\limits.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\memory_map.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\hw_versions.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\aux_registers.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\emm_arc_reg.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\arc\arc_reg.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\apexextensions.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\9305\includes\t9305_periph.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_pml.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_irq.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_rng.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_adc.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_uni_tim.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_prot_tim.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_rc_calib.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_uart.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_i2c_master.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_nvm.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_spi_master.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_spi_slave.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_gpio.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_system.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_qdec.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_pck_proc.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_rf_ctrl.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_radio.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_aoad_matrix.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_cu.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_i2s.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\common\includes\t9305_usb.h \
+  C:\ARC\MetaWare\arc\inc\string.h C:\ARC\MetaWare\arc\inc\features.h \
+  C:\ARC\MetaWare\arc\inc\_na.h C:\ARC\MetaWare\arc\inc\xlocale.h \
+  C:\Users\corey\Downloads\EM9305_EM_BLEU_SDK_v4.2\libs\third_party\emb\packetcraft\wsf\include\wsf_msg.h
