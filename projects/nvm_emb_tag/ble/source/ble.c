@@ -74,6 +74,9 @@
 
 #include <gap/gap_api.h>
 #include <fmpl/fmpl_api.h>
+#include <adc.h>
+#include <i2c.h>
+#include <i2c_module.h>
 
 #ifdef PRINT_LTK
 #include <printf.h>
@@ -107,6 +110,69 @@ static struct
 /// Local IRK
 static const uint8_t gcLocalIrk[LL_KEY_LEN] = {0x95, 0xC8, 0xEE, 0x6F, 0xC5, 0x0D, 0xEF, 0x93, 0x35, 0x4E, 0x7C, 0x57, 0x08, 0xE2, 0xA3, 0x85};
 #endif
+
+static volatile bool gI2cDone = false;
+
+static void BLE_I2cCallback(Driver_Status_t status, void *pUserData)
+{
+    (void)status;
+    (void)pUserData;
+    gI2cDone = true;
+}
+
+static void BLE_DelayMs(uint32_t ms)
+{
+    volatile uint32_t cnt;
+    while (ms--)
+    {
+        for (cnt = 0; cnt < 48000; ++cnt)
+        {
+            __asm__ volatile("nop");
+        }
+    }
+}
+
+static void BLE_UpdateAdvData(void)
+{
+    uint16_t adcRaw;
+    uint32_t adcMv = 0;
+
+    ADC_Init();
+    ADC_SetSourceSelection(ADC_SOURCE_VBAT1);
+    ADC_SetClockConfig(ADC_CLK_120000_HZ);
+    ADC_SetResolution(ADC_9_BITS);
+    ADC_Enable();
+    if (ADC_StartBlocking() && ADC_GetValue(&adcRaw))
+    {
+        adcMv = ADC_ValueToMillivolt(adcRaw);
+    }
+    ADC_Disable();
+
+    uint8_t cmd = 0xFD;
+    I2C_Init();
+    gI2cDone = false;
+    if (I2C_Write(STS40_I2C_ADDR, &cmd, 1, BLE_I2cCallback, NULL))
+    {
+        while (!gI2cDone) { }
+        BLE_DelayMs(10);
+        uint8_t buf[3];
+        gI2cDone = false;
+        if (I2C_Read(STS40_I2C_ADDR, buf, 3, BLE_I2cCallback, NULL))
+        {
+            while (!gI2cDone) { }
+            uint32_t tempRaw = ((uint32_t)buf[0] << 8) | buf[1];
+            gAdvDataDisc[ADV_TEMP_IDX]     = (uint8_t)(tempRaw >> 24);
+            gAdvDataDisc[ADV_TEMP_IDX + 1] = (uint8_t)(tempRaw >> 16);
+            gAdvDataDisc[ADV_TEMP_IDX + 2] = (uint8_t)(tempRaw >> 8);
+            gAdvDataDisc[ADV_TEMP_IDX + 3] = (uint8_t)(tempRaw);
+        }
+    }
+
+    gAdvDataDisc[ADV_ADC_IDX]     = (uint8_t)(adcMv >> 24);
+    gAdvDataDisc[ADV_ADC_IDX + 1] = (uint8_t)(adcMv >> 16);
+    gAdvDataDisc[ADV_ADC_IDX + 2] = (uint8_t)(adcMv >> 8);
+    gAdvDataDisc[ADV_ADC_IDX + 3] = (uint8_t)(adcMv);
+}
 
 /// Persistent BB runtime configuration.
 static BbRtCfg_t gBbRtCfg;
@@ -219,8 +285,8 @@ _Static_assert(BLE_CONN_MAX <= LL_MAX_CONN, "BLE_CONN_MAX cannot be larger than 
 /// Link layer runtime configuration - Maximum number of pending advertising reports.
 #define LL_RT_CFG_MAX_ADV_REPORTS   (3u)
 
-/// Advertising data, discoverable mode.
-static const uint8_t gcAdvDataDisc[] =
+/// Advertising data, discoverable mode. Contains sensor data at the end.
+static uint8_t gAdvDataDisc[] =
 {
     // Flags.
     2,                          // Length.
@@ -244,8 +310,22 @@ static const uint8_t gcAdvDataDisc[] =
     DM_ADV_TYPE_16_UUID,                    /*! AD type */
     UINT16_TO_BYTES(ATT_UUID_LINK_LOSS_SERVICE),
     UINT16_TO_BYTES(ATT_UUID_IMMEDIATE_ALERT_SERVICE),
-    UINT16_TO_BYTES(ATT_UUID_TX_POWER_SERVICE)
+    UINT16_TO_BYTES(ATT_UUID_TX_POWER_SERVICE),
+    // Delimiter and sensor placeholders (12 bytes)
+    0x00, 0x00,                         // delimiter
+    0x00, 0x00, 0x00, 0x00,             // ADC value
+    0x00, 0x00,                         // delimiter
+    0x00, 0x00, 0x00, 0x00              // temperature value
 };
+
+/// Indexes within gAdvDataDisc for sensor values
+#define ADV_DELIM1_IDX 18u
+#define ADV_ADC_IDX    20u
+#define ADV_DELIM2_IDX 24u
+#define ADV_TEMP_IDX   26u
+#define ADV_DATA_LEN   ((uint8_t)sizeof(gAdvDataDisc))
+
+#define STS40_I2C_ADDR 0x46
 
 /// Scan data, discoverable mode.
 static const uint8_t gcScanDataDisc[] =
@@ -568,7 +648,7 @@ static void BLE_PrivRemDevFromResListInd(dmEvt_t *pMsg)
 static void BLE_SetupAdv(void)
 {
     // Set advertising and scan response data for discoverable mode.
-    AppAdvSetData(APP_ADV_DATA_DISCOVERABLE, sizeof(gcAdvDataDisc), (uint8_t *)gcAdvDataDisc);
+    AppAdvSetData(APP_ADV_DATA_DISCOVERABLE, sizeof(gAdvDataDisc), (uint8_t *)gAdvDataDisc);
     AppAdvSetData(APP_SCAN_DATA_DISCOVERABLE, sizeof(gcScanDataDisc), (uint8_t *)gcScanDataDisc);
 
     // Set advertising and scan response data for connectable mode.
@@ -811,6 +891,7 @@ static void BLE_ProcSubsysMsg(wsfMsgHdr_t *pMsg)
         if (gAppCb.resListRestoreHdl == APP_DB_HDL_NONE)
         {
             /* No device to restore.  Setup application. */
+            BLE_UpdateAdvData();
             BLE_SetupAdv();
             BLE_StartAdv();
         }

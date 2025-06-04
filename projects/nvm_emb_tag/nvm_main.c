@@ -49,6 +49,9 @@
 #include <pml.h>
 #include <radio.h>
 #include <types.h>
+#include <adc.h>
+#include <i2c.h>
+#include <i2c_module.h>
 
 #ifdef PRINT_LTK
 #include <uart.h>
@@ -94,6 +97,14 @@ void NVM_ConfigModules(void)
     UART_RegisterModule();
 #endif // PRINT_LTK
 
+    I2C_RegisterModule();
+
+    gI2C_Config.clockFrequency = (uint8_t)ClockFrequency100;
+    gI2C_Config.clockStretching = true;
+    gI2C_Config.gpioSck = 0;
+    gI2C_Config.gpioSda = 8;
+    gI2C_Config.enabled = true;
+
     // Check if it wakes up from sleep.
     if (PML_DidBootFromSleep())
     {
@@ -135,6 +146,9 @@ NO_RETURN void NVM_ApplicationEntry(void)
 #ifdef PRINT_LTK
         Main_SetupUartTxPin(7);
 #endif // PRINT_LTK
+
+        ADC_Init();
+        I2C_Init();
 
         // Create and start the Bluetooth task.
         BleTask_Create();

@@ -13,6 +13,8 @@ SET(${PROJECT_NAME}_LIBS
     ${NVM_COMMON_LIBS}
     QPC
     emb_peripheral
+    adc
+    i2c
 )
 
 SET(${PROJECT_NAME}_EMCORE_LIBS
@@ -23,6 +25,8 @@ SET(${PROJECT_NAME}_INCLUDES
     ${EMB_COMMON_INCLUDES}
     my_app/includes
     ble/includes
+    ${LIBS_DIR}/adc/includes
+    ${LIBS_DIR}/i2c/includes
 )
 
 SET(targets_emcore_flavor "standard")
